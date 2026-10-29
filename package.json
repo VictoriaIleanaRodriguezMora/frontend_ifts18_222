@@ -1,0 +1,22 @@
+{
+  "name": "frontend_ifts18_222",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "watch-sass --include-path scss scss/style.scss css/main.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VictoriaIleanaRodriguezMora/frontend_ifts18_222.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/VictoriaIleanaRodriguezMora/frontend_ifts18_222/issues"
+  },
+  "homepage": "https://github.com/VictoriaIleanaRodriguezMora/frontend_ifts18_222#readme"
+}
