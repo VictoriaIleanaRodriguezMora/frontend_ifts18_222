@@ -1,5 +1,5 @@
 let educacion, trabajo, todo;
-fetch("./src/json/info.json")
+fetch(".././json/info.json")
   .then((respuesta) => respuesta.json())
   .then((data) => {
     console.log(data);
