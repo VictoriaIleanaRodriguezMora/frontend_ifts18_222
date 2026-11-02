@@ -10,3 +10,15 @@
 - Pathname - https://developer-mozilla-org.translate.goog/en-US/docs/Web/API/URL/pathname?_x_tr_sl=en&_x_tr_tl=es&_x_tr_hl=es&_x_tr_pto=tc
 # Imports / JS
 - https://lenguajejs.com/javascript/modulos/alias-import/
+
+# HTML / JS Dinámico
+- https://www-freecodecamp-org.translate.goog/news/reusable-html-components-how-to-reuse-a-header-and-footer-on-a-website/?_x_tr_sl=en&_x_tr_tl=es&_x_tr_hl=es&_x_tr_pto=tc
+
+# Figma
+- Click derecho: Agregar disposición automática
+![alt text](image.png)
+- Click derecho > Más opciones de disposicion > Ajustar al tamaño
+![alt text](image-1.png)
+
+# Accesibilidad
+- https://webaim.org/resources/contrastchecker/?fcolor=FFFFFF&bcolor=2300EB

@@ -4,13 +4,103 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Web Developer</title>
     <link rel="stylesheet" href="./src/styles/css/main.css">
+    <!-- font awesome -->
+    <!-- meta tags -->
 </head>
 
 <body>
     <h1>Hola!</h1>
+
+    <main>
+        <section id="sobremi">
+            <article className="sobremi__contacto">
+                <h1>
+                        Hola! 👋🏼 <br />
+                        Soy Victoria Rodriguez, <br />
+                        Full Stack Web Developer
+                </h1>
+
+                <div className="sobremi__contacto--redes">
+                    <ul>
+                        <li>
+                            <FontAwesomeIcon icon={faEnvelope} />
+                        </li>
+                        <li>
+                            <a href="https://github.com/VictoriaIleanaRodriguezMora">
+                                <FontAwesomeIcon icon={faGithub} />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/victoriarodriguezmora/">
+                                <FontAwesomeIcon icon={faLinkedin} />
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div className="sobremi__contacto--curriculum">
+                    <button>
+                        VER CURRICULUM
+                        <FontAwesomeIcon icon={faDownload} />
+                    </button>
+                </div>
+            </article>
+
+            <article className="sobremi__knowme">
+                <div>
+                    <p>
+                        <span>
+                            <span className="sobremi__knowme-const">const </span>
+                            knowMe
+                            <span className="sobremi__knowme-const"> = </span>
+                            <span className="sobremi__knowme-bracket"> {`{`}</span>
+                        </span>
+                        <br />
+                        <span>
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+                            <span className="sobremi__knowme-key">ImFrom:</span>
+                            <span className="sobremi__knowme-value">
+                                '🇦🇷 Buenos Aires, Argentina',
+                            </span>
+                        </span>
+                        <br />
+                        <span>
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+                            <span className="sobremi__knowme-key">
+                                StudyingProgramming:
+                            </span>
+                            <span className="sobremi__knowme-value"> 'Since 2019',</span>
+                        </span>
+                        <br />
+                        <span>
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+                            <span className="sobremi__knowme-key">EnglishCambridge:</span>
+                            <span className="sobremi__knowme-value">
+                                'B1 (still studying)',
+                            </span>
+                        </span>
+                        <br />
+                        <span>
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+                            <span className="sobremi__knowme-key">LoveDogs:</span>
+                            <span className="sobremi__knowme-value"> 'true 🐶'</span>
+                        </span>
+                        <br />
+                        <span>
+                            <span className="sobremi__knowme-bracket">{`};`}</span>
+                        </span>
+                    </p>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <!-- scripts -->
     <script src="./src/js/script.js"></script>
+    <script src="./src/html/shared/header.js"></script>
+    <script src="./src/html/shared/footer.js"></script>
 </body>
 
 </html>
