@@ -1,3 +1,6 @@
+# Figma 
+- https://www.figma.com/design/eRaQhVtRWww1sLjfivh0H5/FrontEnd-IFTS18?node-id=9-116&t=4NVcMyS4AWUr5fFW-0
+
 # Sass
 - https://www-freecodecamp-org.translate.goog/news/the-beginners-guide-to-sass/?_x_tr_sl=en&_x_tr_tl=es&_x_tr_hl=es&_x_tr_pto=tc 
 - https://www.youtube.com/watch?v=A1tyKkkziTc&t=976s
