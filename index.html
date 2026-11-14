@@ -5,24 +5,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web Developer</title>
-    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="./styles.css">
     <!-- font awesome -->
     <!-- meta tags -->
 </head>
 
 <body>
-    <h1>Hola!</h1>
 
     <main>
-        <section id="sobremi">
-            <article className="sobremi__contacto">
-                <h1>
-                    Hola! 👋🏼 <br />
-                    Soy Victoria Rodriguez, <br />
-                    Full Stack Web Developer
-                </h1>
 
-                <div className="sobremi__contacto--redes">
+        <h1>
+            Hola! 👋🏼 <br />
+            Soy Victoria Rodriguez, <br />
+            Full Stack Web Developer
+        </h1>
+
+        <p>Me especializo en el ecosistema JavaScript. Tengo +3 años de experiencia en Front End.
+            <br>
+            <br>
+            Tengo título
+            terciario en 'Tecnicatura Superior en Desarrollo de Software' y actualmente estoy estudiando
+            Ingenieria en Sistemas & Informática.
+        </p>
+        <!-- <div className="sobremi__contacto--redes">
                     <ul>
                         <li>
                             <FontAwesomeIcon icon={faEnvelope} />
@@ -38,17 +43,25 @@
                             </a>
                         </li>
                     </ul>
-                </div>
+                </div> -->
 
-                <div className="sobremi__contacto--curriculum">
-                    <button>
-                        VER CURRICULUM
-                        <FontAwesomeIcon icon={faDownload} />
-                    </button>
-                </div>
-            </article>
+        <div className="contacto">
+            <div class="contacto__redes-sociales">
+                <i class="fa-brands fa-linkedin"></i>
+                <i class="fa-brands fa-github"></i>
+                <i class="fa-solid fa-envelope"></i>
+            </div>
+            <button>
+                Ver curriculum
+                <FontAwesomeIcon icon={faDownload} />
+            </button>
+            <button>
+                Contactarme
+                <FontAwesomeIcon icon={faDownload} />
+            </button>
+        </div>
 
-            <article className="sobremi__knowme">
+        <!-- <article className="sobremi__knowme">
                 <div>
                     <p>
                         <span>
@@ -93,14 +106,13 @@
                         </span>
                     </p>
                 </div>
-            </article>
-        </section>
+            </article> -->
     </main>
 
     <!-- scripts -->
-    <script src="./src/js/script.js"></script>
-    <script src="./src/html/shared/header.js"></script>
-    <script src="./src/html/shared/footer.js"></script>
+    <script src="https://kit.fontawesome.com/10e8077464.js" crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
+
 </body>
 
 </html>

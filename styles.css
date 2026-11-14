@@ -1,85 +1,83 @@
+/* FUENTES */
+@import url("https://fonts.googleapis.com/css2?family=Braah+One&family=Comfortaa:wght@300&family=Foldit&family=Libre+Franklin:wght@100&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Orbitron&family=Shadows+Into+Light&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Rethink+Sans:wght@500&display=swap");
+/* FUENTES */
+
 * {
     margin: 0;
-    padding: 0
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.css {
-    background-color: rgba(37, 74, 221, .185);
-    color: #254bdd;
-    border: 1px solid #254bdd
+ul,
+li,
+a {
+    text-decoration: none;
+    list-style: none;
 }
 
-.html {
-    background-color: rgba(221, 76, 36, .171);
-    color: #dd4b24;
-    border: 1px solid #dd4b24
-}
-
-.js {
-    background-color: rgba(239, 214, 29, .146);
-    color: #efd81d;
-    border: 1px solid #efd81d
-}
-
-.react {
-    background-color: rgba(94, 211, 243, .199);
-    color: #00b6e8;
-    border: 1px solid #00b6e8
-}
-
-.sass {
-    background-color: rgba(255, 3, 129, .119);
-    color: #c66394;
-    border: 1px solid #c66394
-}
-
-.node {
-    background-color: rgba(3, 136, 47, .121);
-    color: #3b8d04;
-    border: 1px solid #3b8d04
-}
-
-.mongo {
-    background-color: rgba(17, 141, 77, .174);
-    color: #118d4d;
-    border: 1px solid #118d4d
-}
-
-.mysql {
-    background-color: rgba(0, 94, 135, .185);
-    color: #005e87;
-    border: 1px solid #005e87
-}
-
-.git {
-    background-color: rgba(233, 77, 49, .174);
-    color: #da5603;
-    border: 1px solid #da5603
-}
-
-.github {
-    background-color: #000;
-    color: #fff;
-    border: 1px solid #fff
-}
-
-.npm {
-    background-color: rgba(255, 1, 1, .11);
-    color: #c53635;
-    border: 1px solid #c53635
+i {
+    font-size: 60px;
 }
 
 body {
-    background-color: red
+    background: linear-gradient(-63deg, #00FF88 28%, #00FFAE 55%, #00FFD4 84%);
+    font-family: "Montserrat";
 }
 
+
+
+/* HEADER */
 header {
     width: 100%;
     height: 70px;
-    background-color: #000;
-    color: #fff
+    background: #000;
+    color: #fff;
+    padding: 10px;
+    align-content: center;
+
+    & div {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 100%;
+
+        & ul {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            width: 60%;
+
+        }
+    }
 }
 
+/* HEADER */
+
+/* MAIN */
+main {
+    padding: 75px 90px;
+
+    h1 {
+        font-size: 64px;
+    }
+
+    p {
+        font-weight: 600;
+        width: 60%;
+    }
+}
+
+/* contacto */
+.contacto{
+    margin-top: 65px;
+}
+/* contacto */
+
+/* MAIN */
+
+
+/* COMPONENTE - LISTA PUNTEADA */
 #lista-punteada {
     border-radius: 25px;
     width: 50%
@@ -167,6 +165,9 @@ header {
     top: 1.5rem
 }
 
+/* COMPONENTE - LISTA PUNTEADA */
+
+/* PROYECTOS */
 #proyectos {
     width: 100%
 }
@@ -239,6 +240,9 @@ header {
     margin-right: 5px
 }
 
+/* PROYECTOS */
+
+/* TECNOLOGIAS */
 #tecnologias {
     width: 100%;
     display: flex;
@@ -303,4 +307,73 @@ header {
     padding: 15px
 }
 
-/*# sourceMappingURL=main.css.map */
+/* TECNOLOGIAS */
+
+/* ICONOS TECNOLOGIAS */
+.css {
+    background-color: rgba(37, 74, 221, .185);
+    color: #254bdd;
+    border: 1px solid #254bdd
+}
+
+.html {
+    background-color: rgba(221, 76, 36, .171);
+    color: #dd4b24;
+    border: 1px solid #dd4b24
+}
+
+.js {
+    background-color: rgba(239, 214, 29, .146);
+    color: #efd81d;
+    border: 1px solid #efd81d
+}
+
+.react {
+    background-color: rgba(94, 211, 243, .199);
+    color: #00b6e8;
+    border: 1px solid #00b6e8
+}
+
+.sass {
+    background-color: rgba(255, 3, 129, .119);
+    color: #c66394;
+    border: 1px solid #c66394
+}
+
+.node {
+    background-color: rgba(3, 136, 47, .121);
+    color: #3b8d04;
+    border: 1px solid #3b8d04
+}
+
+.mongo {
+    background-color: rgba(17, 141, 77, .174);
+    color: #118d4d;
+    border: 1px solid #118d4d
+}
+
+.mysql {
+    background-color: rgba(0, 94, 135, .185);
+    color: #005e87;
+    border: 1px solid #005e87
+}
+
+.git {
+    background-color: rgba(233, 77, 49, .174);
+    color: #da5603;
+    border: 1px solid #da5603
+}
+
+.github {
+    background-color: #000;
+    color: #fff;
+    border: 1px solid #fff
+}
+
+.npm {
+    background-color: rgba(255, 1, 1, .11);
+    color: #c53635;
+    border: 1px solid #c53635
+}
+
+/* ICONOS TECNOLOGIAS */
