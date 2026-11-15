@@ -47,34 +47,34 @@ function crearExperienciaTrabajo(data_experiencia) {
         // console.log("** data_experiencia", data_experiencia[i]);
         // console.log("** data_experiencia", data_experiencia.length);
 
-        item_experiencia = `
-        <article class="trabajo">
+        item_experiencia = `<article class="trabajo">
             <span>${data_experiencia[i].duracion}</span>
             <h3>${data_experiencia[i].puesto}</h3>
-            <span>${data_experiencia[i].empresa}</span>
+            <span class="trabajo__empresa" >${data_experiencia[i].empresa}</span>
 
             <ul>
             // items_puesto_trabajo
             </ul>
-        </article>
-    `;
+        </article>`;
         // console.log("item_experiencia", item_experiencia);
         console.log("article_experiencia", article_experiencia);
 
-        article_experiencia = [...article_experiencia, [item_experiencia]]
+        // article_experiencia = [...article_experiencia, [item_experiencia]]
+        // article_experiencia = [...article_experiencia, item_experiencia] // asi da error
+        dom_section_trabajo.innerHTML += item_experiencia
     }
+    dom_section_trabajo.innerHTML += article_experiencia
     console.log("*s*s**s*s*s article_experiencia", article_experiencia);
 
 
-    let items_puesto_de_trabajo
-    for (let i = 0; i < data_experiencia.length; i++) {
-        // me parece que necesito un bucle dentro de otro
-        // console.log("data_experiencia", data_experiencia[i].contenidos);
-        items_puesto_de_trabajo = [...data_experiencia[i].contenidos]
+    // let items_puesto_de_trabajo
+    // for (let i = 0; i < data_experiencia.length; i++) {
+    //     // me parece que necesito un bucle dentro de otro
+    //     // console.log("data_experiencia", data_experiencia[i].contenidos);
+    //     items_puesto_de_trabajo = [...data_experiencia[i].contenidos]
 
-    }
+    // }
     // console.log("items_puesto_de_trabajo", items_puesto_de_trabajo);
-    dom_section_trabajo.innerHTML = article_experiencia
 }
 
 // section_trabajo.innerHTML()

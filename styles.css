@@ -3,10 +3,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Rethink+Sans:wght@500&display=swap");
 /* FUENTES */
 
+/* VARIABLES */
+:root {
+    --primary-blue: #2300EB;
+    --text-white: #fff;
+}
+
+/* VARIABLES */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-size: 18px;
 }
 
 
@@ -77,9 +86,70 @@ main {
 /* MAIN */
 
 /* SECCION - EXPERIENCIA DE TRABAJO */
-section.trabajo {
+section#section_trabajo {
     width: 100%;
     padding: 75px 90px;
+
+    h1 {
+        margin-bottom: 40px;
+    }
+
+    article.trabajo {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        padding: 0 0 0 40px;
+
+        /* punto */
+        &::before {
+            content: "";
+            position: absolute;
+            background-color: var(--primary-blue);
+            width: 1.5rem;
+            height: 1.5rem;
+            border-radius: 50%;
+            left: 0;
+            top: 2px
+        }
+
+        /* palito que une los puntos */
+        &:not(:last-child):after {
+            content: "";
+            position: absolute;
+            background-color: var(--primary-blue);
+            width: .1875rem;
+            height: calc(100% - 24px);
+            left: .675rem;
+            top: 1.5rem
+        }
+
+        h3,
+        span.trabajo__empresa {
+            padding: 5px 10px;
+            border-radius: 22px;
+            width: fit-content;
+            margin-top: 7px;
+        }
+
+        h3 {
+            background-color: var(--primary-blue);
+            color: var(--text-white);
+            font-weight: 600;
+        }
+
+        /* span:nth-child(2) { */
+        span {
+            font-weight: 500;
+        }
+
+        span.trabajo__empresa {
+            background-color: var(--text-white);
+            color: var(--primary-blue);
+            font-weight: 500;
+        }
+
+
+    }
 
 }
 
