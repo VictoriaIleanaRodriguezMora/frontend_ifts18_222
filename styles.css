@@ -9,23 +9,27 @@
     box-sizing: border-box;
 }
 
-ul,
-li,
-a {
-    text-decoration: none;
-    list-style: none;
-}
-
-i {
-    font-size: 60px;
-}
 
 body {
     background: linear-gradient(-63deg, #00FF88 28%, #00FFAE 55%, #00FFD4 84%);
     font-family: "Montserrat";
+
+    ul,
+    li,
+    a {
+        text-decoration: none;
+        list-style: none;
+    }
+
+    i {
+        font-size: 60px;
+    }
+
+    h1 {
+        font-size: 64px;
+    }
+
 }
-
-
 
 /* HEADER */
 header {
@@ -58,10 +62,6 @@ header {
 main {
     padding: 75px 90px;
 
-    h1 {
-        font-size: 64px;
-    }
-
     p {
         font-weight: 600;
         width: 60%;
@@ -69,12 +69,22 @@ main {
 }
 
 /* contacto */
-.contacto{
+.contacto {
     margin-top: 65px;
 }
-/* contacto */
 
+/* contacto */
 /* MAIN */
+
+/* SECCION - EXPERIENCIA DE TRABAJO */
+section.trabajo {
+    width: 100%;
+    padding: 75px 90px;
+
+}
+
+/* SECCION - EXPERIENCIA DE TRABAJO */
+
 
 
 /* COMPONENTE - LISTA PUNTEADA */

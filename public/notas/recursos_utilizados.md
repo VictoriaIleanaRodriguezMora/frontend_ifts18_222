@@ -15,12 +15,15 @@
 # Js
 - https://developer.mozilla.org/es/docs/Web/API/Fetch_API/Using_Fetch
 - Pathname - https://developer-mozilla-org.translate.goog/en-US/docs/Web/API/URL/pathname?_x_tr_sl=en&_x_tr_tl=es&_x_tr_hl=es&_x_tr_pto=tc
-- 
+- https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Operators/Spread_syntax
+
+
 # Imports / JS
 - https://lenguajejs.com/javascript/modulos/alias-import/
 
 # HTML / JS Dinámico
 - https://www-freecodecamp-org.translate.goog/news/reusable-html-components-how-to-reuse-a-header-and-footer-on-a-website/?_x_tr_sl=en&_x_tr_tl=es&_x_tr_hl=es&_x_tr_pto=tc
+- https://developer.mozilla.org/es/docs/Web/HTML/Reference/Elements/main
 
 # Figma
 - Click derecho: Agregar disposición automática
