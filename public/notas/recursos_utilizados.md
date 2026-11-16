@@ -16,7 +16,9 @@
 - https://developer.mozilla.org/es/docs/Web/API/Fetch_API/Using_Fetch
 - Pathname - https://developer-mozilla-org.translate.goog/en-US/docs/Web/API/URL/pathname?_x_tr_sl=en&_x_tr_tl=es&_x_tr_hl=es&_x_tr_pto=tc
 - https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Operators/Spread_syntax
-
+- https://builtin-com.translate.goog/articles/convert-html-plain-text?_x_tr_sl=en&_x_tr_tl=es&_x_tr_hl=es&_x_tr_pto=tc
+- https://developer.mozilla.org/es/docs/Web/API/Element/innerHTML
+- https://www.w3schools.com/jsref/prop_html_innerhtml.asp
 
 # Imports / JS
 - https://lenguajejs.com/javascript/modulos/alias-import/

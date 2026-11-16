@@ -4,7 +4,7 @@ function fetchData(categoria) {
     fetch("../info.json")
         .then((respuesta) => respuesta.json())
         .then((data) => {
-            console.log(data);
+            // console.log(data); 
 
             switch (categoria) {
                 case "educacion":
@@ -30,54 +30,65 @@ function fetchData(categoria) {
         });
 }
 
-console.log("hola");
+// console.log("hola");
 
 // seccion trabajo
 const dom_section_trabajo = document.querySelector("#section_trabajo");
-console.log("dom_section_trabajo", dom_section_trabajo);
+// console.log("dom_section_trabajo", dom_section_trabajo);
 
 fetchData("trabajo")
 // console.log("***trabajo", trabajo);
 
 function crearExperienciaTrabajo(data_experiencia) {
-
-    let article_experiencia = []
     let item_experiencia = ""
+
+
     for (let i = 0; i < data_experiencia.length; i++) {
-        // console.log("** data_experiencia", data_experiencia[i]);
-        // console.log("** data_experiencia", data_experiencia.length);
+        // el ul acumula TODOS los items
+        let listaItems = document.createElement("ul")
+        let listaItemsPlano
 
+        for (let j = 0; j < data_experiencia[i].contenidos.length; j++) {
+            //  el bucle for accede al largo del arary de contenidos, de cada puesto de trabajo
+            // let itemsInsert = []
+            // se está guardando en un li, los dos contenidos
+            // let listaItems = document.createElement("ul")
+            // data_experiencia[i].contenidos.forEach(e => {
+            // console.log(e);
+            // itemsInsert = [...itemsInsert, `<li>${data_experiencia[i].contenidos[j]}</li>`]
+            listaItems.innerHTML += `<li>${data_experiencia[i].contenidos[j]}</li>` //  lista de items  en cada vuelta se acumulan. objeto de tipo HTMLElement. referencia a  elemento del DOM que tiene propiedades y métodos
+            listaItemsPlano = listaItems.innerHTML // devuelve el contenido html en formato plano
+
+            // });
+            // let items = 
+            // console.log("itemsInsert", itemsInsert);
+            console.log(listaItems);
+            console.log(listaItems.innerText);
+            console.log(listaItems.innerHTML);            // console.log("listaItemsPlano", listaItemsPlano);
+
+            // item_experiencia.insertAdjacentHTML("beforeend", listaItems)
+
+        }
+        // listaItemsPlano = listaItems.innerText
+
+        // crea el article
         item_experiencia = `<article class="trabajo">
-            <span>${data_experiencia[i].duracion}</span>
-            <h3>${data_experiencia[i].puesto}</h3>
-            <span class="trabajo__empresa" >${data_experiencia[i].empresa}</span>
+                                    <span>${data_experiencia[i].duracion}</span>
+                                    <h3>${data_experiencia[i].puesto}</h3>
+                                    <span class="trabajo__empresa" >${data_experiencia[i].empresa}</span>
+                                    ${listaItems.outerHTML}             
+                                </article>`;
 
-            <ul>
-            // items_puesto_trabajo
-            </ul>
-        </article>`;
-        // console.log("item_experiencia", item_experiencia);
-        console.log("article_experiencia", article_experiencia);
+        // Necesito un bucle dentro de otro bucle, para poder alcanzar a la prop contenidos.
+        // La prop contenidos, es un array con los items que describen el trabajo/educacion, sólo lo puedo alcanzar de esta manera
+        // El item_experiencia, se construye con datos alcanzados del primer bucle, y los contenidos alcanzados en el segundo bucle
 
-        // article_experiencia = [...article_experiencia, [item_experiencia]]
-        // article_experiencia = [...article_experiencia, item_experiencia] // asi da error
         dom_section_trabajo.innerHTML += item_experiencia
     }
-    dom_section_trabajo.innerHTML += article_experiencia
-    console.log("*s*s**s*s*s article_experiencia", article_experiencia);
-
-
-    // let items_puesto_de_trabajo
-    // for (let i = 0; i < data_experiencia.length; i++) {
-    //     // me parece que necesito un bucle dentro de otro
-    //     // console.log("data_experiencia", data_experiencia[i].contenidos);
-    //     items_puesto_de_trabajo = [...data_experiencia[i].contenidos]
-
-    // }
-    // console.log("items_puesto_de_trabajo", items_puesto_de_trabajo);
 }
 
 // section_trabajo.innerHTML()
+
 
 
 // seccion trabajo
