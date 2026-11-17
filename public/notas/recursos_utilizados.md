@@ -6,6 +6,10 @@
 - https://www.freecodecamp.org/espanol/news/convenciones-de-nomenclatura-de-css-que-te-ahorraran-horas-de-depuracion/
 - https://www.w3schools.com/css/css_form_inputs.asp
 - https://es.stackoverflow.com/questions/179809/cambiar-color-de-placeholder-segundo-nombre
+- https://www.w3schools.com/cssref/sel_nth-child.php
+- https://www-w3schools-com.translate.goog/css/css_display_hide.asp?_x_tr_sl=en&_x_tr_tl=es&_x_tr_hl=es&_x_tr_pto=tc
+- https://dev.to/ljcdev/easy-hamburger-menu-with-js-2do0
+- https://dev-to.translate.goog/ljcdev/easy-hamburger-menu-with-js-2do0?_x_tr_sl=en&_x_tr_tl=es&_x_tr_hl=es&_x_tr_pto=tc
 
 # Sass
 - https://www-freecodecamp-org.translate.goog/news/the-beginners-guide-to-sass/?_x_tr_sl=en&_x_tr_tl=es&_x_tr_hl=es&_x_tr_pto=tc 
@@ -23,6 +27,8 @@
 - https://www.w3schools.com/jsref/prop_html_innerhtml.asp
 - https://www.freecodecamp.org/espanol/news/validacion-basica-de-formularios-en-javascript/
 - https://developer.mozilla.org/es/docs/Web/API/Event/preventDefault
+- https://www.w3schools.com/howto/howto_js_media_queries.asp
+- https://developer.mozilla.org/en-US/docs/Web/API/Window/matchMedia
 
 # Imports / JS
 - https://lenguajejs.com/javascript/modulos/alias-import/

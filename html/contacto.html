@@ -9,7 +9,47 @@
 </head>
 
 <body>
-    <section id="section_trabajo" class="">
+    <!-- HEADER -->
+    <header>
+        <button type="button" id="show-menu-hamburguesa" aria-label="Abrir menú" aria-expanded="false"
+            aria-controls="navbar" class="display-none">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+
+        <button type="button" id="hide-menu-hamburguesa" aria-label="Cerrar menú" aria-expanded="false"
+            aria-controls="navbar" class="display-none">
+            <i class="fa-regular fa-circle-xmark"></i>
+        </button>
+        <div id="menu-navegacion">
+            <p>{path}</p>
+            <nav id="navbar">
+                <ul>
+                    <a href="../sobre-mi">
+                        <li>Sobre mí</li>
+                    </a>
+
+                    <a href=" ../proyectos">
+                        <li>Proyectos</li>
+                    </a>
+
+                    <a href="../tecnologias">
+                        <li>Tecnologias</li>
+                    </a>
+
+                    <a href="./trabajos.html">
+                        <li>Experiencia de trabajo</li>
+                    </a>
+
+                    <a href="./html/contacto.html">
+                        <li>Contacto</li>
+                    </a>
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+    <!-- HEADER -->
+    <section id="section_contacto" class="secciones_principales">
         <h1>¿Querés enviarme un correo?</h1>
         <form novalidate>
             <!-- lo agregué para poner mantener el type="email", no ponerle text. porque sino valida el navegador y no toma mi validación -->
@@ -38,6 +78,7 @@
         </form>
     </section>
 
+    <script src="https://kit.fontawesome.com/10e8077464.js" crossorigin="anonymous"></script>
     <script src="../script.js"></script>
 </body>
 
