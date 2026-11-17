@@ -19,48 +19,156 @@
     padding: 0;
     box-sizing: border-box;
     font-size: 18px;
+    font-family: "Montserrat";
+    overflow-x: clip;
+
+}
+
+html {
+    overflow-x: clip;
 }
 
 body {
     background: linear-gradient(-63deg, #00ff88 28%, #00ffae 55%, #00ffd4 84%);
-    font-family: "Montserrat";
+    overflow-x: clip;
 
     ul,
     li,
     a {
         text-decoration: none;
         list-style: none;
+        color: white;
+
     }
 
     i {
-        font-size: 60px;
+        font-size: clamp(40px, 5.5vw, 100px);
     }
 
     h1 {
-        font-size: 64px;
+        font-size: clamp(30px, 3.375vw, 84px);
     }
+}
+
+.text-blue {
+    color: var(--primary-blue);
 }
 
 /* HEADER */
 header {
     width: 100%;
-    height: 70px;
-    background: #000;
-    color: #fff;
-    padding: 10px;
-    align-content: center;
+    position: relative;
 
-    & div {
+    button {
+        width: 30px;
+        height: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        border-radius: 6px;
+        border: 0px;
+        align-self: end;
+        position: absolute;
+        top: 3%;
+        right: 2%;
+
+        i {
+            font-size: 25px;
+            padding: 5px;
+            font-size: 27px;
+        }
+    }
+
+
+
+    div#menu-navegacion {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
+        align-items: center;
         width: 100%;
+        height: 70px;
+        background: #000;
+        color: #fff;
+        padding: 10px;
 
-        & ul {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-around;
-            width: 60%;
+        & a {
+            & i.icono-home {
+                font-size: 35px;
+
+            }
+        }
+
+        nav {
+            width: clamp(300px, 90%, 100%);
+            /*minimo, ideal, maximo*/
+
+            ul {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+                width: 100%;
+                /* MENÚ HAMBURGUESA */
+            }
+        }
+    }
+
+    .display-none {
+        display: none;
+    }
+}
+
+/* breakpoint lg */
+@media (max-width: 992px) {
+
+    button#show-menu-hamburguesa,
+    button#hide-menu-hamburguesa {
+        z-index: 3;
+        margin-top: 10px;
+    }
+
+    header {
+
+        div#menu-navegacion {
+            flex-direction: column;
+            height: auto;
+            width: 80%;
+            position: absolute;
+            transform: translateX(-100%);
+            padding: 75px;
+            z-index: 2;
+            transition: right .3s ease;
+
+            nav {
+                width: 100%;
+
+                ul {
+                    flex-direction: column;
+                    align-items: center;
+                    gap: 25px;
+                    padding: 20px 15px;
+
+                    a {
+                        text-align: center;
+                        border-bottom: 2px solid gray;
+                        display: inline;
+                        width: auto;
+                    }
+                }
+            }
+        }
+
+        /* estado abierto */
+        /* show-div */
+        div#menu-navegacion.menu-abierto {
+            right: 0;
+            transform: translateX(0);
+        }
+
+        button#show-menu-hamburguesa,
+        button#hide-menu-hamburguesa {
+            margin-top: 10px;
         }
     }
 }
@@ -69,26 +177,51 @@ header {
 
 /* MAIN */
 main {
-    padding: 75px 90px;
+    padding: calc(12%) calc(8%);
 
     p {
         font-weight: 600;
-        width: 60%;
+        width: 90%;
     }
+
+    /* contacto */
+    .contacto {
+        width: 100%;
+        margin-top: 35px;
+
+        .contacto__redes-sociales {
+            margin-bottom: 15px;
+        }
+
+        button {
+            margin-top: 3px;
+            padding: 10px;
+            background-color: var(--fondo-blanco);
+            color: var(--primary-blue);
+            border: 4px solid var(--primary-blue);
+            border-radius: 30px;
+            font-weight: 600;
+        }
+
+        button:nth-child(2) {
+            background-color: var(--primary-blue);
+            color: var(--fondo-blanco);
+            border: 4px solid var(--primary-blue);
+        }
+    }
+
+    /* contacto */
 }
 
-/* contacto */
-.contacto {
-    margin-top: 65px;
-}
-
-/* contacto */
 /* MAIN */
 
 /* SECCION - EXPERIENCIA DE TRABAJO */
+.secciones_principales {
+    padding: calc(12%) calc(8%);
+}
+
 section#section_trabajo {
     width: 100%;
-    padding: 75px 90px;
 
     h1 {
         margin-bottom: 40px;
@@ -147,6 +280,26 @@ section#section_trabajo {
             color: var(--primary-blue);
             font-weight: 500;
         }
+
+        ul {
+            padding-bottom: 50px;
+            list-style: disc;
+            list-style-type: disc;
+            padding-left: 2rem;
+
+            li {
+                /* padding-left: 2rem; */
+                display: list-item;
+                list-style: disc;
+                list-style-type: disc;
+                color: black;
+                font-weight: 500;
+
+                &::marker {
+                    color: var(--primary-blue);
+                }
+            }
+        }
     }
 }
 
@@ -154,7 +307,7 @@ section#section_trabajo {
 
 /* FORMULARIO */
 form {
-    width: 80%;
+    width: 100%;
     height: 80%;
     display: flex;
     flex-direction: column;
@@ -212,7 +365,56 @@ form {
     }
 }
 
+@media (max-width: 576px) {
+    form {
+
+        input,
+        textarea {
+            width: 100%;
+        }
+    }
+}
+
 /* FORMULARIO */
+
+/* FOOTER */
+footer {
+    background: linear-gradient(180deg, black, #000000da);
+    height: auto;
+    padding: calc(6%) calc(8%);
+
+    div.footer__redes-sociales {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 7px;
+
+        span {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            color: white;
+            word-break: break-word;
+
+            i {
+                color: white;
+                /* width: 70px;
+                height: 70px; */
+                font-size: clamp(40px, 4.5vw, 100px);
+                padding: 0 25px 0 0;
+
+            }
+
+            a {
+                color: white;
+                text-decoration: underline;
+                text-underline-offset: 4px;
+            }
+        }
+    }
+}
+
+/* FOOTER */
 
 /* COMPONENTE - LISTA PUNTEADA */
 #lista-punteada {

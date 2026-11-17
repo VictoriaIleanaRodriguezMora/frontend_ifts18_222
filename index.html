@@ -1,31 +1,71 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Web Developer</title>
-    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./styles.css" />
     <!-- font awesome -->
     <!-- meta tags -->
 </head>
 
 <body>
+    <!-- HEADER -->
+    <header>
+        <button type="button" id="show-menu-hamburguesa" aria-label="Abrir menú" aria-expanded="false"
+            aria-controls="navbar" class="display-none">
+            <i class="fa-solid fa-bars"></i>
+        </button>
 
+        <button type="button" id="hide-menu-hamburguesa" aria-label="Cerrar menú" aria-expanded="false"
+            aria-controls="navbar" class="display-none">
+            <i class="fa-regular fa-circle-xmark"></i>
+        </button>
+        <div id="menu-navegacion">
+            <a href="./index.html"> <i class="fa-solid fa-house icono-home"></i></a>
+            <nav id="navbar">
+                <ul>
+                    <a href="../sobre-mi">
+                        <li>Sobre mí</li>
+                    </a>
+
+                    <a href=" ../proyectos">
+                        <li>Proyectos</li>
+                    </a>
+
+                    <a href="../tecnologias">
+                        <li>Tecnologias</li>
+                    </a>
+
+                    <a href="./html/trabajos.html">
+                        <li>Experiencia de trabajo</li>
+                    </a>
+
+                    <a href="./html/contacto.html">
+                        <li>Contacto</li>
+                    </a>
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+    <!-- HEADER -->
     <main>
-
         <h1>
             Hola! 👋🏼 <br />
             Soy Victoria Rodriguez, <br />
             Full Stack Web Developer
         </h1>
 
-        <p>Me especializo en el ecosistema JavaScript. Tengo +3 años de experiencia en Front End.
-            <br>
-            <br>
-            Tengo título
-            terciario en 'Tecnicatura Superior en Desarrollo de Software' y actualmente estoy estudiando
-            Ingenieria en Sistemas & Informática.
+        <p>
+            Me especializo en el ecosistema JavaScript. Tengo +3 años de experiencia
+            en Front End.
+            <br />
+            <br />
+            Tengo título terciario en 'Tecnicatura Superior en Desarrollo de
+            Software' y actualmente estoy estudiando Ingenieria en Sistemas &
+            Informática.
         </p>
         <!-- <div className="sobremi__contacto--redes">
                     <ul>
@@ -45,20 +85,14 @@
                     </ul>
                 </div> -->
 
-        <div className="contacto">
+        <div class="contacto">
             <div class="contacto__redes-sociales">
                 <i class="fa-brands fa-linkedin"></i>
                 <i class="fa-brands fa-github"></i>
                 <i class="fa-solid fa-envelope"></i>
             </div>
-            <button>
-                Ver curriculum
-                <FontAwesomeIcon icon={faDownload} />
-            </button>
-            <button>
-                Contactarme
-                <FontAwesomeIcon icon={faDownload} />
-            </button>
+            <button> Ver curriculum </button>
+            <button> Contactarme </button>
         </div>
 
         <!-- <article className="sobremi__knowme">
@@ -112,7 +146,6 @@
     <!-- scripts -->
     <script src="https://kit.fontawesome.com/10e8077464.js" crossorigin="anonymous"></script>
     <script src="./script.js"></script>
-
 </body>
 
 </html>
