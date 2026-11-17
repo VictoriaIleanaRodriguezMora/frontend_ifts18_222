@@ -80,6 +80,8 @@ header {
         }
     }
 
+
+
     div#menu-navegacion {
         display: flex;
         flex-direction: row;
@@ -90,6 +92,13 @@ header {
         background: #000;
         color: #fff;
         padding: 10px;
+
+        & a {
+            & i.icono-home {
+                font-size: 35px;
+
+            }
+        }
 
         nav {
             width: clamp(300px, 90%, 100%);
