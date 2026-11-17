@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contacto</title>
+    <link rel="stylesheet" href="../styles.css" />
+</head>
+
+<body>
+    <section id="section_trabajo" class="">
+        <h1>¿Querés enviarme un correo?</h1>
+        <form novalidate>
+            <!-- lo agregué para poner mantener el type="email", no ponerle text. porque sino valida el navegador y no toma mi validación -->
+            <label for="campo_nombre">* Nombre</label>
+            <input type="text" id="campo_nombre" name="nombre_name" placeholder="Ejemplo: Maria ">
+            <span id="mensaje_error_nombre" class="mensaje-error"></span>
+
+            <label for="campo_apellido">* Apellido</label>
+            <input type="text" id="campo_apellido" name="apellido_name" placeholder="Ejemplo: Sanchez ">
+            <span id="mensaje_error_apellido" class="mensaje-error"></span>
+
+            <label for="campo_email">* Email</label>
+            <input type="email" id="campo_email" name="email_name" placeholder="Ejemplo: Sanchez ">
+            <span id="mensaje_error_email" class="mensaje-error"></span>
+
+            <label for="campo_consulta">* Consulta</label>
+            <textarea id="campo_consulta" name="consulta_name"
+                placeholder="Ejemplo: Este es el texto de la consulta "></textarea>
+            <span id="mensaje_error_consulta" class="mensaje-error"></span>
+
+
+            <p>¡Recibiré tu email y te contestaré lo más pronto que pueda!</p>
+
+            <input type="submit" id="boton_enviar" value="Enviar consulta">
+
+        </form>
+    </section>
+
+    <script src="../script.js"></script>
+</body>
+
+</html>
