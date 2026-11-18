@@ -1,85 +1,139 @@
 <!doctype html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contacto</title>
     <link rel="stylesheet" href="../styles.css" />
-</head>
+  </head>
 
-<body>
+  <body>
     <!-- HEADER -->
     <header>
-        <button type="button" id="show-menu-hamburguesa" aria-label="Abrir menú" aria-expanded="false"
-            aria-controls="navbar" class="display-none">
-            <i class="fa-solid fa-bars"></i>
-        </button>
+      <button
+        type="button"
+        id="show-menu-hamburguesa"
+        aria-label="Abrir menú"
+        aria-expanded="false"
+        aria-controls="navbar"
+        class="display-none"
+      >
+        <i class="fa-solid fa-bars"></i>
+      </button>
 
-        <button type="button" id="hide-menu-hamburguesa" aria-label="Cerrar menú" aria-expanded="false"
-            aria-controls="navbar" class="display-none">
-            <i class="fa-regular fa-circle-xmark"></i>
-        </button>
-        <div id="menu-navegacion">
-            <a href="../index.html"> <i class="fa-solid fa-house icono-home"></i></a>
-            <nav id="navbar">
-                <ul>
-                    <a href="../sobre-mi">
-                        <li>Sobre mí</li>
-                    </a>
+      <button
+        type="button"
+        id="hide-menu-hamburguesa"
+        aria-label="Cerrar menú"
+        aria-expanded="false"
+        aria-controls="navbar"
+        class="display-none"
+      >
+        <i class="fa-regular fa-circle-xmark"></i>
+      </button>
+      <div id="menu-navegacion">
+        <a href="../index.html">
+          <i class="fa-solid fa-house icono-home"></i
+        ></a>
+        <nav id="navbar">
+          <ul>
+            <a href="../sobre-mi">
+              <li>Sobre mí</li>
+            </a>
 
-                    <a href=" ../proyectos">
-                        <li>Proyectos</li>
-                    </a>
+            <a href=" ../proyectos">
+              <li>Proyectos</li>
+            </a>
 
-                    <a href="../tecnologias">
-                        <li>Tecnologias</li>
-                    </a>
+            <a href="../tecnologias">
+              <li>Tecnologias</li>
+            </a>
 
-                    <a href="./trabajos.html">
-                        <li>Experiencia de trabajo</li>
-                    </a>
+            <a href="./trabajos.html">
+              <li>Experiencia de trabajo</li>
+            </a>
 
-                    <a href="./html/contacto.html">
-                        <li>Contacto</li>
-                    </a>
-                </ul>
-            </nav>
-
-        </div>
+            <a href="./html/contacto.html">
+              <li>Contacto</li>
+            </a>
+          </ul>
+        </nav>
+      </div>
     </header>
     <!-- HEADER -->
+
     <section id="section_contacto" class="secciones_principales">
-        <h1>¿Querés enviarme un correo?</h1>
-        <form novalidate>
-            <!-- lo agregué para poner mantener el type="email", no ponerle text. porque sino valida el navegador y no toma mi validación -->
-            <label for="campo_nombre">* Nombre</label>
-            <input type="text" id="campo_nombre" name="nombre_name" placeholder="Ejemplo: Maria ">
-            <span id="mensaje_error_nombre" class="mensaje-error"></span>
+      <h1>¿Querés enviarme un correo?</h1>
+      <form novalidate>
+        <!-- lo agregué para poner mantener el type="email", no ponerle text. porque sino valida el navegador y no toma mi validación -->
+        <label for="campo_nombre">* Nombre</label>
+        <input
+          type="text"
+          id="campo_nombre"
+          name="nombre_name"
+          placeholder="Ejemplo: Maria "
+        />
+        <span id="mensaje_error_nombre" class="mensaje-error"></span>
 
-            <label for="campo_apellido">* Apellido</label>
-            <input type="text" id="campo_apellido" name="apellido_name" placeholder="Ejemplo: Sanchez ">
-            <span id="mensaje_error_apellido" class="mensaje-error"></span>
+        <label for="campo_apellido">* Apellido</label>
+        <input
+          type="text"
+          id="campo_apellido"
+          name="apellido_name"
+          placeholder="Ejemplo: Sanchez "
+        />
+        <span id="mensaje_error_apellido" class="mensaje-error"></span>
 
-            <label for="campo_email">* Email</label>
-            <input type="email" id="campo_email" name="email_name" placeholder="Ejemplo: Sanchez ">
-            <span id="mensaje_error_email" class="mensaje-error"></span>
+        <label for="campo_email">* Email</label>
+        <input
+          type="email"
+          id="campo_email"
+          name="email_name"
+          placeholder="Ejemplo: Sanchez "
+        />
+        <span id="mensaje_error_email" class="mensaje-error"></span>
 
-            <label for="campo_consulta">* Consulta</label>
-            <textarea id="campo_consulta" name="consulta_name"
-                placeholder="Ejemplo: Este es el texto de la consulta "></textarea>
-            <span id="mensaje_error_consulta" class="mensaje-error"></span>
+        <label for="campo_consulta">* Consulta</label>
+        <textarea
+          id="campo_consulta"
+          name="consulta_name"
+          placeholder="Ejemplo: Este es el texto de la consulta "
+        ></textarea>
+        <span id="mensaje_error_consulta" class="mensaje-error"></span>
 
+        <p>¡Recibiré tu email y te contestaré lo más pronto que pueda!</p>
 
-            <p>¡Recibiré tu email y te contestaré lo más pronto que pueda!</p>
-
-            <input type="submit" id="boton_enviar" value="Enviar consulta">
-
-        </form>
+        <input type="submit" id="boton_enviar" value="Enviar consulta" />
+      </form>
     </section>
 
-    <script src="https://kit.fontawesome.com/10e8077464.js" crossorigin="anonymous"></script>
-    <script src="../script.js"></script>
-</body>
+    <!-- FOOTER  -->
+    <footer class="main-footer">
+      <div class="footer__redes-sociales">
+        <span>
+          <i class="fa-brands fa-linkedin"></i>
+          <a href="https://www.linkedin.com/in/victoriaileanarodriguez/" target="_blank" >
+            /victoriaileanarodriguez
+          </a>
+        </span>
+        <span>
+          <i class="fa-brands fa-github"></i>
+          <a href="https://github.com/VictoriaIleanaRodriguezMora" target="_blank">
+            VictoriaIleanaRodriguezMora
+          </a>
+        </span>
+        <span>
+          <i class="fa-solid fa-envelope"></i>
+          victoriaileanarodriguezmora@gmail.com
+        </span>
+      </div>
+    </footer>
+    <!-- FOOTER  -->
 
+    <script
+      src="https://kit.fontawesome.com/10e8077464.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../script.js"></script>
+  </body>
 </html>

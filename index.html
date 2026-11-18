@@ -1,151 +1,123 @@
 <!doctype html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Web Developer</title>
     <link rel="stylesheet" href="./styles.css" />
     <!-- font awesome -->
     <!-- meta tags -->
-</head>
+  </head>
 
-<body>
+  <body>
     <!-- HEADER -->
     <header>
-        <button type="button" id="show-menu-hamburguesa" aria-label="Abrir menú" aria-expanded="false"
-            aria-controls="navbar" class="display-none">
-            <i class="fa-solid fa-bars"></i>
-        </button>
+      <button
+        type="button"
+        id="show-menu-hamburguesa"
+        aria-label="Abrir menú"
+        aria-expanded="false"
+        aria-controls="navbar"
+        class="display-none"
+      >
+        <i class="fa-solid fa-bars"></i>
+      </button>
 
-        <button type="button" id="hide-menu-hamburguesa" aria-label="Cerrar menú" aria-expanded="false"
-            aria-controls="navbar" class="display-none">
-            <i class="fa-regular fa-circle-xmark"></i>
-        </button>
-        <div id="menu-navegacion">
-            <a href="./index.html"> <i class="fa-solid fa-house icono-home"></i></a>
-            <nav id="navbar">
-                <ul>
-                    <a href="../sobre-mi">
-                        <li>Sobre mí</li>
-                    </a>
+      <button
+        type="button"
+        id="hide-menu-hamburguesa"
+        aria-label="Cerrar menú"
+        aria-expanded="false"
+        aria-controls="navbar"
+        class="display-none"
+      >
+        <i class="fa-regular fa-circle-xmark"></i>
+      </button>
+      
+      <div id="menu-navegacion">
+        <a href="./index.html"> <i class="fa-solid fa-house icono-home"></i></a>
+        <nav id="navbar">
+          <ul>
+            <a href="../sobre-mi">
+              <li>Sobre mí</li>
+            </a>
 
-                    <a href=" ../proyectos">
-                        <li>Proyectos</li>
-                    </a>
+            <a href=" ../proyectos">
+              <li>Proyectos</li>
+            </a>
 
-                    <a href="../tecnologias">
-                        <li>Tecnologias</li>
-                    </a>
+            <a href="../tecnologias">
+              <li>Tecnologias</li>
+            </a>
 
-                    <a href="./html/trabajos.html">
-                        <li>Experiencia de trabajo</li>
-                    </a>
+            <a href="./html/trabajos.html">
+              <li>Experiencia de trabajo</li>
+            </a>
 
-                    <a href="./html/contacto.html">
-                        <li>Contacto</li>
-                    </a>
-                </ul>
-            </nav>
-
-        </div>
+            <a href="./html/contacto.html">
+              <li>Contacto</li>
+            </a>
+          </ul>
+        </nav>
+      </div>
     </header>
     <!-- HEADER -->
     <main>
-        <h1>
-            Hola! 👋🏼 <br />
-            Soy Victoria Rodriguez, <br />
-            Full Stack Web Developer
-        </h1>
+      <h1>
+        Hola! 👋🏼 <br />
+        Soy Victoria Rodriguez, <br />
+        Full Stack Web Developer
+      </h1>
 
-        <p>
-            Me especializo en el ecosistema JavaScript. Tengo +3 años de experiencia
-            en Front End.
-            <br />
-            <br />
-            Tengo título terciario en 'Tecnicatura Superior en Desarrollo de
-            Software' y actualmente estoy estudiando Ingenieria en Sistemas &
-            Informática.
-        </p>
-        <!-- <div className="sobremi__contacto--redes">
-                    <ul>
-                        <li>
-                            <FontAwesomeIcon icon={faEnvelope} />
-                        </li>
-                        <li>
-                            <a href="https://github.com/VictoriaIleanaRodriguezMora">
-                                <FontAwesomeIcon icon={faGithub} />
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://www.linkedin.com/in/victoriarodriguezmora/">
-                                <FontAwesomeIcon icon={faLinkedin} />
-                            </a>
-                        </li>
-                    </ul>
-                </div> -->
+      <p>
+        Me especializo en el ecosistema JavaScript. Tengo +3 años de experiencia
+        en Front End.
+        <br />
+        <br />
+        Cuento con título terciario en 'Tecnicatura Superior en Desarrollo de
+        Software' y actualmente estoy estudiando Ingenieria en Sistemas &
+        Informática.
+      </p>
 
-        <div class="contacto">
-            <div class="contacto__redes-sociales">
-                <i class="fa-brands fa-linkedin"></i>
-                <i class="fa-brands fa-github"></i>
-                <i class="fa-solid fa-envelope"></i>
-            </div>
-            <button> Ver curriculum </button>
-            <button> Contactarme </button>
+      <div class="contacto">
+        <div class="contacto__redes-sociales">
+          <i class="fa-brands fa-linkedin"></i>
+          <i class="fa-brands fa-github"></i>
+          <i class="fa-solid fa-envelope"></i>
         </div>
-
-        <!-- <article className="sobremi__knowme">
-                <div>
-                    <p>
-                        <span>
-                            <span className="sobremi__knowme-const">const </span>
-                            knowMe
-                            <span className="sobremi__knowme-const"> = </span>
-                            <span className="sobremi__knowme-bracket"> {`{`}</span>
-                        </span>
-                        <br />
-                        <span>
-                            &nbsp;&nbsp;&nbsp;&nbsp;
-                            <span className="sobremi__knowme-key">ImFrom:</span>
-                            <span className="sobremi__knowme-value">
-                                '🇦🇷 Buenos Aires, Argentina',
-                            </span>
-                        </span>
-                        <br />
-                        <span>
-                            &nbsp;&nbsp;&nbsp;&nbsp;
-                            <span className="sobremi__knowme-key">
-                                StudyingProgramming:
-                            </span>
-                            <span className="sobremi__knowme-value"> 'Since 2019',</span>
-                        </span>
-                        <br />
-                        <span>
-                            &nbsp;&nbsp;&nbsp;&nbsp;
-                            <span className="sobremi__knowme-key">EnglishCambridge:</span>
-                            <span className="sobremi__knowme-value">
-                                'B1 (still studying)',
-                            </span>
-                        </span>
-                        <br />
-                        <span>
-                            &nbsp;&nbsp;&nbsp;&nbsp;
-                            <span className="sobremi__knowme-key">LoveDogs:</span>
-                            <span className="sobremi__knowme-value"> 'true 🐶'</span>
-                        </span>
-                        <br />
-                        <span>
-                            <span className="sobremi__knowme-bracket">{`};`}</span>
-                        </span>
-                    </p>
-                </div>
-            </article> -->
+        <button><a href="https://www.linkedin.com/in/victoriaileanarodriguez/" target="_blank" >Ver curriculum</a></button>
+        <button><a href="./html/contacto.html"> Contactarme</a></button>
+      </div>
     </main>
 
-    <!-- scripts -->
-    <script src="https://kit.fontawesome.com/10e8077464.js" crossorigin="anonymous"></script>
-    <script src="./script.js"></script>
-</body>
+    <!-- FOOTER  -->
+    <footer class="main-footer">
+      <div class="footer__redes-sociales">
+        <span>
+          <i class="fa-brands fa-linkedin"></i>
+          <a href="https://www.linkedin.com/in/victoriaileanarodriguez/" target="_blank" >
+            /victoriaileanarodriguez
+          </a>
+        </span>
+        <span>
+          <i class="fa-brands fa-github"></i>
+          <a href="https://github.com/VictoriaIleanaRodriguezMora" target="_blank">
+            VictoriaIleanaRodriguezMora
+          </a>
+        </span>
+        <span>
+          <i class="fa-solid fa-envelope"></i>
+          victoriaileanarodriguezmora@gmail.com
+        </span>
+      </div>
+    </footer>
+    <!-- FOOTER  -->
 
+    <!-- scripts -->
+    <script
+      src="https://kit.fontawesome.com/10e8077464.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./script.js"></script>
+  </body>
 </html>
